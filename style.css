@@ -1,10 +1,16 @@
 header {
     background-color: rgb(50, 167, 145);
-    width: 100%;
-    position: absolute;
     top: 0;
     left: 0;
     padding: 20px 50px;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
+
+header form{
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 5px;
+}
+
+
