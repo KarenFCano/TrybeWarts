@@ -1,9 +1,19 @@
 header {
-    background-color: rgb(50, 167, 145);
-    top: 0;
-    left: 0;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: rgb(50, 167, 145);
+  top: 0;
+  left: 0;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-flow: column;
+  min-width: 675px;
 }
