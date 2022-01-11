@@ -23,3 +23,8 @@ main {
   border: 2px solid rgb(50, 167, 145);
   margin: 3px;
 }
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+}

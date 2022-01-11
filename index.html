@@ -15,11 +15,25 @@
     </header>
     <main>
       <form id="evaluation-form" action="" method="GET">
+        <!-- Inputs - Requisito 8 -->
         <div>
           <input id="input-name" type="text" placeholder="Nome">
           <input id="input-lastname" type="text" placeholder="Sobrenome">
         </div>
         <input id="input-email" type="text" placeholder="Email">
+        <!-- Selects - Requisito 9 -->
+        <!-- Inputs RadioButtons - Requisito 12 -->
+        <label id="label-family" for="family">Qual sua família?</label>
+          <div>
+            <input type="radio" name="family" value="Frontend">Frontend
+          </div>
+          <div>
+            <input type="radio" name="family" value="Backend">Backend
+          </div>
+          <div>
+            <input type="radio" name="family" value="FullStack">FullStack
+          </div>
+        <!-- Inputs CheckBox - Requisito 13 -->
       </form>
     </main>
     <script src="script.js"></script>
