@@ -1,6 +1,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+/* Header - Requisito 1 */
 header {
   background-color: rgb(50, 167, 145);
   top: 0;
@@ -10,31 +12,61 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+/* Form - Requisito 2 */
 header form {
   display: flex;
   justify-content: flex-end;
   border-radius: 5px;
 }
 
+/* Main - Requisito 5 */
 main {
   display: flex;
+  justify-content: space-around;
+  margin: 70px;
 }
-
+/* Form - Requisito 6 */
 #evaluation-form {
   display: flex;
   flex-flow: column;
-  min-width: 675px;
+  width: 675px;
 }
 
+/* Inputs - Requisito 8 */
 #evaluation-form input {
-  border-radius: 8px;
+  border-radius: 10px;
   border: 2px solid rgb(50, 167, 145);
   margin: 3px;
   padding: 10px;
 }
 
-#label-family {
+/* Radio Buttons - Requisito 12 */
+#divFamily {
+  margin: 5px;
+}
+#family {
   display: flex;
   flex-direction: column;
+  margin: 5px;
 }
 
+/* Radio Butttons - Requisito 14 */
+#satisfaction {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+#label-rate {
+  margin-right: 15px;
+}
+
+#satisfaction input {
+  margin-right: 20px;
+  margin-left: 3px;
+}
+
+#satisfaction p {
+  margin-block: 0;
+}
