@@ -70,3 +70,9 @@ main {
 #satisfaction p {
   margin-block: 0;
 }
+
+/* CheckBox - Requisito 16 */
+#iagree {
+  display: flex;
+  margin: 5px;
+}
