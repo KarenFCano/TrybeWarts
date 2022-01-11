@@ -5,12 +5,24 @@ header {
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
-}
-
+    align-items: center;
+  }
 header form{
     display: flex;
     justify-content: flex-end;
     border-radius: 5px;
 }
-
-
+  main {
+    display: flex;
+  }
+  #evaluation-form {
+    display: flex;
+    flex-flow: column;
+    min-width: 675px;
+  }
+  
+  #evaluation-form input {
+    border-radius: 7px;
+    border: 2px solid rgb(50, 167, 145);
+    margin: 3px;
+  }
