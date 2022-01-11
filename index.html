@@ -12,15 +12,17 @@
     <header class='header'> 
       <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="TrybeWarts Logo">
       <h1 id="trybewarts-header-title">Trybewarts</h1>
-      <form class='trybewarts-login'>
+     <!-- Requisito 2 -->
+      <form class='trybewarts-login' name="login">
         <input class="form-control" type="email" id="email" name="email" placeholder="Email" required>
         <input class="form-control" type="password" id="senha" name="password" placeholder="Senha" required>
-        <button class="btn" type="submit">Entrar</button>
+        <button class="btn" id="btn" type="button">Entrar</button>
     </form>    
     </header>
     <main>
+       
       <form id="evaluation-form" action="" method="GET">
-        <!-- Inputs - Requisito 8 -->
+       <!-- Inputs - Requisito 8 -->
         <div>
           <input id="input-name" type="text" placeholder="Nome">
           <input id="input-lastname" type="text" placeholder="Sobrenome">
@@ -38,9 +40,14 @@
           <div>
             <input type="radio" name="family" value="FullStack">FullStack
           </div>
+          <!-- Requisito 7 -->
+      <div>
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="TrybeWarts Colored">
+      </div>
         <!-- Inputs CheckBox - Requisito 13 -->
       </form>
     </main>
     <script src="script.js"></script>
   </body>
 </html>
+

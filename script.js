@@ -1,5 +1,17 @@
-const button = document.getElementById('btn');
 
-button.addEventListener('click', function alert(){
-   alert("Email ou senha inválidos");
+const button = document.getElementById("btn");
+
+function alertFunction() {
+   let adressEmail = document.getElementById('email');
+   let adressPass = document.getElementById('senha');
+
+   if (adressEmail.value === 'tryber@teste.com' && adressPass.value === '123456') {
+      alert("Olá, Tryber!");
+   } else{
+      alert("Email ou senha inválidos.");
+   }
+}
+
+button.addEventListener("click", function(){
+   alertFunction();
 });
