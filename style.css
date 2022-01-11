@@ -17,3 +17,9 @@ main {
   flex-flow: column;
   min-width: 675px;
 }
+
+#evaluation-form input {
+  border-radius: 7px;
+  border: 2px solid rgb(50, 167, 145);
+  margin: 3px;
+}
