@@ -7,6 +7,11 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+header form {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 5px;
+}
 
 main {
   display: flex;
@@ -28,3 +33,4 @@ main {
   display: flex;
   flex-direction: column;
 }
+
