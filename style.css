@@ -102,10 +102,9 @@ main {
 #email{
  display: flex;
  flex-direction: column;
- justify-content: flex-start
- align-items: center;
-
+ justify-content: flex-start;
 }
+
 #house{
   border-radius: 10px;
   border: 2px solid rgb(50, 167, 145);
@@ -113,5 +112,21 @@ main {
   margin: 3px;
   padding: 10px;
   display: flex;
- justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-;
+}
+
+/* Requisito 13 */
+#label-content{ 
+  margin: 5px;
+}
+#checkbox{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+hr{
+  width: 650px;
+  border: 1px solid black;
 }
