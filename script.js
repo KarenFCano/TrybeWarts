@@ -1,4 +1,5 @@
 
+// CRIAR ALERT AO REALIZAR LOGIN - REQUISITO 3
 const button = document.getElementById("btn");
 
 function alertFunction() {
@@ -25,10 +26,22 @@ function createRadioBtn() {
     radioBtn.name = 'rate';
     radioBtn.value = `${key + 1}`;
     const radioBtnText = document.createElement('p');
-    radioBtnText.innerText = `${key + 1}`;
+    radioBtnText.innerText = `${key + 1}`;-
     divRadioBtns.appendChild(radioBtnText);
     divRadioBtns.appendChild(radioBtn);
   }
 }
 
 createRadioBtn();
+
+/* CRIAR CONTADOR DE CARACTERES - REQUISITO 15*/
+const contador = document.getElementById('coment');
+
+contador.addEventListener('keypress', function countComent(event) {
+   let maximoCaracteres = 500;
+   caracteresInseridos = contador.value.length;
+
+   if(caracteresInseridos >= maximoCaracteres){
+      event.preventDefault();
+   }
+});
