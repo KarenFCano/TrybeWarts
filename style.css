@@ -131,3 +131,15 @@ hr{
   display: flex;
   margin: 5px;
 }
+
+/* Botão enviar - Requisito 17*/
+#submit-btn{
+  margin-top: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(75,0,130);
+  color: white;
+  margin: 3px;
+  padding: 10px;
+  width: 660px
+}
