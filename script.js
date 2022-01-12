@@ -1,8 +1,19 @@
-/* const button = document.getElementById('btn');
+const button = document.getElementById('btn');
 
-button.addEventListener('click', function alert(){
-  alert("Email ou senha inválidos");
-}); */
+function alertFunction() {
+  const adressEmail = document.getElementById('email');
+  const adressPass = document.getElementById('senha');
+
+  if (adressEmail.value === 'tryber@teste.com' && adressPass.value === '123456') {
+    alert('Olá, Tryber!');
+  } else {
+    alert('Email ou senha inválidos.');
+  }
+}
+
+button.addEventListener('click', () => {
+  alertFunction();
+});
 
 // CRIAR RADIO BUTTONS - REQUISITO 14
 function createRadioBtn() {
@@ -11,6 +22,7 @@ function createRadioBtn() {
     const radioBtn = document.createElement('input');
     radioBtn.type = 'radio';
     radioBtn.name = 'rate';
+    radioBtn.required = 'true';
     radioBtn.value = `${key + 1}`;
     const radioBtnText = document.createElement('p');
     radioBtnText.innerText = `${key + 1}`;
@@ -20,3 +32,5 @@ function createRadioBtn() {
 }
 
 createRadioBtn();
+
+// SUBMIT BUTTON - REQUISITO 18

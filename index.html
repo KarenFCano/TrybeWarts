@@ -13,7 +13,7 @@
 <body>
   <header class='header'>
     <!-- Imagem - Requisito 2 -->
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="TrybeWarts Logo">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="TrybeWarts Logotipo" height="100px">
     <!-- Título - Requisito 4 -->
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <!-- Forms Header - Requisito 3 -->
@@ -24,27 +24,36 @@
     </form>
   </header>
   <main>
+    <!-- Requisito 7 -->
+    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="TrybeWarts Logo" height="500px">
     <form id="evaluation-form" action="" method="GET">
       <!-- Inputs - Requisito 8 -->
       <div>
-        <input id="input-name" type="text" placeholder="Nome">
-        <input id="input-lastname" type="text" placeholder="Sobrenome">
+        <input id="input-name" type="text" placeholder="Nome" required>
+        <input id="input-lastname" type="text" placeholder="Sobrenome" required>
       </div>
-      <input id="input-email" type="text" placeholder="Email">
+      <input id="input-email" type="text" placeholder="Email" required>
       <!-- Selects - Requisito 9 -->
-
-      <!-- Radio Buttons - Requisito 12 -->
+      <div>
+        <select name="house" id="house" required>
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+       <!-- Radio Buttons - Requisito 12 -->
       <div id="divFamily">
         <label id="label-family" for="family">Qual sua família?</label>
         <div id="family">
           <div>
-            <input type="radio" name="family" value="Frontend">Família Frontend
+            <input type="radio" name="family" value="Frontend" required>Família Frontend
           </div>
           <div>
-            <input type="radio" name="family" value="Backend">Família Backend
+            <input type="radio" name="family" value="Backend" required>Família Backend
           </div>
           <div>
-            <input type="radio" name="family" value="FullStack">Família FullStack
+            <input type="radio" name="family" value="FullStack" required>Família FullStack
           </div>
         </div>
       </div>
@@ -61,6 +70,7 @@
         <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
         <input id="agreement" type="checkbox">
       </div>
+      <!-- Submit Button - Requisito 18 -->
     </form>
   </main>
   <script src="script.js"></script>

@@ -23,6 +23,7 @@ header form {
 /* Main - Requisito 5 */
 main {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   margin: 70px;
 }
@@ -33,13 +34,18 @@ main {
   width: 675px;
 }
 
+/* Img - Requisito 7 */
+#trybewarts-forms-logo {
+  order: 1;
+}
+
 /* Inputs - Requisito 8 */
 #evaluation-form input {
   border-radius: 10px;
   border: 2px solid rgb(50, 167, 145);
   margin: 3px;
   padding: 10px;
-}
+ }
 
 /* Radio Buttons - Requisito 12 */
 #divFamily {
@@ -67,6 +73,13 @@ main {
   margin-left: 3px;
 }
 
+#trybewarts-forms-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 500px;
+}
+
 #satisfaction p {
   margin-block: 0;
 }
@@ -75,4 +88,9 @@ main {
 #iagree {
   display: flex;
   margin: 5px;
+}
+
+/* Submit Button - Requisito 18 */
+#submit {
+
 }
