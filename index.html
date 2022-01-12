@@ -11,38 +11,39 @@
 </head>
 
 <body>
-  <header class='header'>
+  <header class="header">
     <!-- Imagem - Requisito 2 -->
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="TrybeWarts Logotipo" height="100px">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="TrybeWarts Logotipo"
+      height="100px">
     <!-- Título - Requisito 4 -->
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <!-- Forms Header - Requisito 3 -->
     <form class='trybewarts-login'>
       <input class="form-control" type="email" id="email" name="email" placeholder="Email" required>
       <input class="form-control" type="password" id="senha" name="password" placeholder="Senha" required>
-      <button class="btn" type="submit">Entrar</button>
+      <button class="btn" id="btn" type="submit">Entrar</button>
     </form>
   </header>
   <main>
-    <!-- Requisito 7 -->
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="TrybeWarts Logo" height="500px">
-    <form id="evaluation-form" action="" method="GET">
+    <form id="evaluation-form" action="" target="GET">
       <!-- Inputs - Requisito 8 -->
       <div>
         <input id="input-name" type="text" placeholder="Nome" required>
         <input id="input-lastname" type="text" placeholder="Sobrenome" required>
       </div>
-      <input id="input-email" type="text" placeholder="Email" required>
-      <!-- Selects - Requisito 9 -->
+      <!-- Email e Casas em Linha - Requisito 11 -->
       <div>
-        <select name="house" id="house" required>
+        <input id="input-email" type="text" placeholder="Email">
+        <!-- Selects - Requisito 9 -->
+        <select name="house" id="house">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
       </div>
-       <!-- Radio Buttons - Requisito 12 -->
+
+      <!-- Radio Buttons - Requisito 12 -->
       <div id="divFamily">
         <label id="label-family" for="family">Qual sua família?</label>
         <div id="family">
@@ -57,22 +58,48 @@
           </div>
         </div>
       </div>
-      <!-- CheckBox - Requisito 13 -->
-
+      <!-- Checkboxs - Requisito 13 -->
+      <div id="checkbox">
+        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        <div id="conteudos">
+          <div>
+            <input type="checkbox" name="hofs" value="HoFs">HoFs
+          </div>
+          <div>
+            <input type="checkbox" name="jest" value="Jest">Jest
+          </div>
+          <div>
+            <input type="checkbox" name="promises" value="Promises">Promises
+          </div>
+          <div>
+            <input type="checkbox" name="react" value="React">React
+          </div>
+          <div>
+            <input type="checkbox" name="sql" value="SQL">SQL
+          </div>
+          <div>
+            <input type="checkbox" name="python" value="Python">Python
+          </div>
+        </div>
+      </div>
       <!-- Radio Buttons - Requisito 14 -->
+      <hr>
       <div id="satisfaction">
         <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
       </div>
-      <!-- TextArea - Requisito 15 -->
-
+      <!-- Text Area - Requisito 15 -->
+      <label class="textarea">Deixe seu comentário:</label>
+      <textarea id="coment" name="coment" rows="5" cols="33" maxlength="500"></textarea>
       <!-- CheckBox - Requisito 16 -->
       <div id="iagree">
-        <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+        <label for="agreement">Você concorda com o uso das informações acima?</label>
         <input id="agreement" type="checkbox">
       </div>
-      <!-- Submit Button - Requisito 18 -->
     </form>
+    <!-- Requisito 7 -->
+    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="TrybeWarts Colored">
   </main>
   <script src="script.js"></script>
 </body>
+
 </html>

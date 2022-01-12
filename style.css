@@ -20,6 +20,24 @@ header form {
   border-radius: 5px;
 }
 
+/* Requisito 3 */
+.trybewarts-login .form-control{
+  border-radius: 10px;
+  border: 2px solid rgb(50, 167, 145);
+  margin: 3px;
+  padding: 10px;
+}
+
+#btn{
+  border-radius: 10px;
+  border: 2px solid rgb(50, 167, 145);
+  background-color: rgb(75,0,130);
+  color: white;
+  margin: 3px;
+  padding: 10px;
+  width: 100px
+}
+
 /* Main - Requisito 5 */
 main {
   display: flex;
@@ -32,11 +50,7 @@ main {
   display: flex;
   flex-flow: column;
   width: 675px;
-}
-
-/* Img - Requisito 7 */
-#trybewarts-forms-logo {
-  order: 1;
+  margin-top:30px
 }
 
 /* Inputs - Requisito 8 */
@@ -51,6 +65,7 @@ main {
 #divFamily {
   margin: 5px;
 }
+
 #family {
   display: flex;
   flex-direction: column;
@@ -73,24 +88,46 @@ main {
   margin-left: 3px;
 }
 
+#satisfaction p {
+  margin-block: 0;
+}
+
+/* Requisito 7 */
 #trybewarts-forms-logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   height: 500px;
 }
 
-#satisfaction p {
-  margin-block: 0;
+#house{
+  border-radius: 10px;
+  border: 2px solid rgb(50, 167, 145);
+  background-color: white;
+  margin: 3px;
+  padding: 10px;
+}
+
+/* Requisito 13 */
+#checkbox{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+#conteudos {
+  margin: 10px;
+}
+
+hr{
+  width: 650px;
+  border: 1px solid black; 
+}
+
+/* Ajuste logo do header */
+.trybewarts-header-logo{
+  height: 60px;
 }
 
 /* CheckBox - Requisito 16 */
 #iagree {
   display: flex;
   margin: 5px;
-}
-
-/* Submit Button - Requisito 18 */
-#submit {
-
 }

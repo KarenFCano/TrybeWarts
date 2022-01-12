@@ -1,3 +1,4 @@
+// CRIAR ALERT AO REALIZAR LOGIN - REQUISITO 3
 const button = document.getElementById('btn');
 
 function alertFunction() {
@@ -33,4 +34,14 @@ function createRadioBtn() {
 
 createRadioBtn();
 
-// SUBMIT BUTTON - REQUISITO 18
+/* CRIAR CONTADOR DE CARACTERES - REQUISITO 15 */
+const contador = document.getElementById('coment');
+
+contador.addEventListener('keypress', (event) => {
+  const maximoCaracteres = 500;
+  const caracteresInseridos = contador.value.length;
+
+  if (caracteresInseridos >= maximoCaracteres) {
+    event.preventDefault();
+  }
+});
