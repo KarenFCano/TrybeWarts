@@ -41,7 +41,9 @@ header form {
 /* Main - Requisito 5 */
 main {
   display: flex;
-  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-around;
+  margin: 70px;
 }
 /* Form - Requisito 6 */
 #evaluation-form {
@@ -63,6 +65,7 @@ main {
 #divFamily {
   margin: 5px;
 }
+
 #family {
   display: flex;
   flex-direction: column;
@@ -94,33 +97,25 @@ main {
   height: 500px;
 }
 
-/* Requisito 11 */
-#email{
- display: flex;
- flex-direction: column;
- justify-content: flex-start;
-}
-
 #house{
   border-radius: 10px;
   border: 2px solid rgb(50, 167, 145);
   background-color: white;
   margin: 3px;
   padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-;
 }
 
 /* Requisito 13 */
-#label-content{ 
-  margin: 5px;
-}
 #checkbox{
   display: flex;
   flex-direction: column;
-  /* margin: 5px; */
+  margin: 5px;
 }
+
+#conteudos {
+  margin: 10px;
+}
+
 hr{
   width: 650px;
   border: 1px solid black; 
@@ -129,4 +124,10 @@ hr{
 /* Ajuste logo do header */
 .trybewarts-header-logo{
   height: 60px;
+}
+
+/* CheckBox - Requisito 16 */
+#iagree {
+  display: flex;
+  margin: 5px;
 }

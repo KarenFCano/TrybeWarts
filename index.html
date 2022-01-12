@@ -13,7 +13,8 @@
 <body>
   <header class="header">
     <!-- Imagem - Requisito 2 -->
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="TrybeWarts Logo">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="TrybeWarts Logotipo"
+      height="100px">
     <!-- Título - Requisito 4 -->
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <!-- Forms Header - Requisito 3 -->
@@ -24,12 +25,13 @@
     </form>
   </header>
   <main>
-    <form id="evaluation-form" action="" method="GET">
+    <form id="evaluation-form" action="" target="GET">
       <!-- Inputs - Requisito 8 -->
       <div>
-        <input id="input-name" type="text" placeholder="Nome">
-        <input id="input-lastname" type="text" placeholder="Sobrenome">
+        <input id="input-name" type="text" placeholder="Nome" required>
+        <input id="input-lastname" type="text" placeholder="Sobrenome" required>
       </div>
+      <!-- Email e Casas em Linha - Requisito 11 -->
       <div>
         <input id="input-email" type="text" placeholder="Email">
         <!-- Selects - Requisito 9 -->
@@ -46,13 +48,13 @@
         <label id="label-family" for="family">Qual sua família?</label>
         <div id="family">
           <div>
-            <input type="radio" name="family" value="Frontend">Família Frontend
+            <input type="radio" name="family" value="Frontend" required>Família Frontend
           </div>
           <div>
-            <input type="radio" name="family" value="Backend">Família Backend
+            <input type="radio" name="family" value="Backend" required>Família Backend
           </div>
           <div>
-            <input type="radio" name="family" value="FullStack">Família FullStack
+            <input type="radio" name="family" value="FullStack" required>Família FullStack
           </div>
         </div>
       </div>
@@ -78,23 +80,25 @@
           <div>
             <input type="checkbox" name="python" value="Python">Python
           </div>
-          </div>
         </div>
-        <!-- Radio Buttons - Requisito 14 -->
-        <hr>
-        <div id="satisfaction">
-          <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
-        </div>
-        <!-- Text Area - Requisito 15 -->
-        <label class="textarea">Deixe seu comentário:</label>
-        <textarea id="coment" name="coment" rows="5" cols="33" maxlength="500"></textarea>
-        <div>
-          <button class="btn" id="submit-btn" type="submit">Enviar</button> 
-        </div>
-      </form>\
+      </div>
+      <!-- Radio Buttons - Requisito 14 -->
+      <hr>
+      <div id="satisfaction">
+        <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
+      </div>
+      <!-- Text Area - Requisito 15 -->
+      <label class="textarea">Deixe seu comentário:</label>
+      <textarea id="coment" name="coment" rows="5" cols="33" maxlength="500"></textarea>
+      <!-- CheckBox - Requisito 16 -->
+      <div id="iagree">
+        <label for="agreement">Você concorda com o uso das informações acima?</label>
+        <input id="agreement" type="checkbox">
+      </div>
+    </form>
     <!-- Requisito 7 -->
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="TrybeWarts Colored">
-    </main>
+  </main>
   <script src="script.js"></script>
 </body>
 

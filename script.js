@@ -1,20 +1,19 @@
-
 // CRIAR ALERT AO REALIZAR LOGIN - REQUISITO 3
-const button = document.getElementById("btn");
+const button = document.getElementById('btn');
 
 function alertFunction() {
-   let adressEmail = document.getElementById('email');
-   let adressPass = document.getElementById('senha');
+  const adressEmail = document.getElementById('email');
+  const adressPass = document.getElementById('senha');
 
-   if (adressEmail.value === 'tryber@teste.com' && adressPass.value === '123456') {
-      alert("Olá, Tryber!");
-   } else{
-      alert("Email ou senha inválidos.");
-   }
+  if (adressEmail.value === 'tryber@teste.com' && adressPass.value === '123456') {
+    alert('Olá, Tryber!');
+  } else {
+    alert('Email ou senha inválidos.');
+  }
 }
 
-button.addEventListener("click", function(){
-   alertFunction();
+button.addEventListener('click', () => {
+  alertFunction();
 });
 
 // CRIAR RADIO BUTTONS - REQUISITO 14
@@ -24,9 +23,10 @@ function createRadioBtn() {
     const radioBtn = document.createElement('input');
     radioBtn.type = 'radio';
     radioBtn.name = 'rate';
+    radioBtn.required = 'true';
     radioBtn.value = `${key + 1}`;
     const radioBtnText = document.createElement('p');
-    radioBtnText.innerText = `${key + 1}`;-
+    radioBtnText.innerText = `${key + 1}`;
     divRadioBtns.appendChild(radioBtnText);
     divRadioBtns.appendChild(radioBtn);
   }
@@ -34,14 +34,14 @@ function createRadioBtn() {
 
 createRadioBtn();
 
-/* CRIAR CONTADOR DE CARACTERES - REQUISITO 15*/
+/* CRIAR CONTADOR DE CARACTERES - REQUISITO 15 */
 const contador = document.getElementById('coment');
 
-contador.addEventListener('keypress', function countComent(event) {
-   let maximoCaracteres = 500;
-   caracteresInseridos = contador.value.length;
+contador.addEventListener('keypress', (event) => {
+  const maximoCaracteres = 500;
+  const caracteresInseridos = contador.value.length;
 
-   if(caracteresInseridos >= maximoCaracteres){
-      event.preventDefault();
-   }
+  if (caracteresInseridos >= maximoCaracteres) {
+    event.preventDefault();
+  }
 });
