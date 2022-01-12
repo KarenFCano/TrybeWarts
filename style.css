@@ -41,14 +41,14 @@ header form {
 /* Main - Requisito 5 */
 main {
   display: flex;
-  justify-content: space-around;
-  margin: 70px;
+  /* justify-content: center; */
 }
 /* Form - Requisito 6 */
 #evaluation-form {
   display: flex;
   flex-flow: column;
   width: 675px;
+  margin-top:30px
 }
 
 /* Inputs - Requisito 8 */
@@ -91,9 +91,6 @@ main {
 
 /* Requisito 7 */
 #trybewarts-forms-logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   height: 500px;
 }
 
@@ -122,10 +119,14 @@ main {
 #checkbox{
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  /* margin: 5px; */
 }
-
 hr{
   width: 650px;
-  border: 1px solid black;
+  border: 1px solid black; 
+}
+
+/* Ajuste logo do header */
+.trybewarts-header-logo{
+  height: 60px;
 }
