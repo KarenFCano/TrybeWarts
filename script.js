@@ -35,7 +35,7 @@ function createRadioBtn() {
 createRadioBtn();
 
 /* CRIAR CONTADOR DE CARACTERES - REQUISITO 15 */
-const contador = document.getElementById('coment');
+const contador = document.getElementById('textarea');
 
 contador.addEventListener('keypress', (event) => {
   const maximoCaracteres = 500;
@@ -45,3 +45,10 @@ contador.addEventListener('keypress', (event) => {
     event.preventDefault();
   }
 });
+
+// CRIAR CONTADOR REGRESSIVO DE CARACTERES - REQUISITO 20
+const remainingCharacters = document.getElementById('counter');
+
+contador.oninput = function(event){
+  remainingCharacters.innerHTML=(500-this.value.length);
+}
