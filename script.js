@@ -22,10 +22,12 @@ function createRadioBtn() {
   for (let key = 0; key < 10; key += 1) {
     const radioBtn = document.createElement('input');
     radioBtn.type = 'radio';
+    radioBtn.id = `rate${key + 1}`;
     radioBtn.name = 'rate';
     radioBtn.required = 'true';
     radioBtn.value = `${key + 1}`;
-    const radioBtnText = document.createElement('p');
+    const radioBtnText = document.createElement('label');
+    radioBtnText.setAttribute('for', `rate${key + 1}`);
     radioBtnText.innerText = `${key + 1}`;
     divRadioBtns.appendChild(radioBtnText);
     divRadioBtns.appendChild(radioBtn);
@@ -34,7 +36,7 @@ function createRadioBtn() {
 
 createRadioBtn();
 
-/* CRIAR CONTADOR DE CARACTERES - REQUISITO 15 */
+// CRIAR CONTADOR DE CARACTERES - REQUISITO 15
 const contador = document.getElementById('coment');
 
 contador.addEventListener('keypress', (event) => {
@@ -43,5 +45,27 @@ contador.addEventListener('keypress', (event) => {
 
   if (caracteresInseridos >= maximoCaracteres) {
     event.preventDefault();
+  }
+});
+
+// HABILITAR BOTÃO ENVIAR - REQUISITO 18
+const submitBtn = document.getElementById('submit-btn');
+const agreement = document.getElementById('agreement');
+
+window.onload = () => {
+  submitBtn.disabled = true;
+  submitBtn.style.backgroundColor = 'grey';
+  submitBtn.style.cursor = 'default';
+};
+
+agreement.addEventListener('click', () => {
+  if (submitBtn.disabled === true) {
+    submitBtn.disabled = false;
+    submitBtn.style.backgroundColor = 'indigo';
+    submitBtn.style.cursor = 'pointer';
+  } else {
+    submitBtn.disabled = true;
+    submitBtn.style.backgroundColor = 'grey';
+    submitBtn.style.cursor = 'default';
   }
 });

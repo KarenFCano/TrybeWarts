@@ -2,6 +2,10 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Header - Requisito 1 */
 header {
   background-color: rgb(50, 167, 145);

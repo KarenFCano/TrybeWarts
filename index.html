@@ -10,11 +10,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="body">
   <header class="header">
     <!-- Imagem - Requisito 2 -->
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="TrybeWarts Logotipo"
-      height="100px">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="TrybeWarts Logotipo">
     <!-- Título - Requisito 4 -->
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <!-- Forms Header - Requisito 3 -->
@@ -89,14 +88,14 @@
         <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
       </div>
       <!-- Text Area - Requisito 15 -->
-      <label class="textarea">Deixe seu comentário:</label>
-      <textarea id="coment" name="coment" rows="5" cols="33" maxlength="500"></textarea>
+      <label class="textarea" for="coment">Deixe seu comentário:</label>
+      <textarea id="coment" name="coment" rows="5" cols="33"></textarea>
       <!-- CheckBox - Requisito 16 -->
       <div id="iagree">
-        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <label id="label-infos">Você concorda com o uso das informações acima?</label>
         <input id="agreement" type="checkbox">
       </div>
-      <!-- Requisito 17 -->
+      <!-- Submit Button - Requisito 17 -->
       <div>
         <button class="btn" id="submit-btn" type="submit">Enviar</button>
       </div>
