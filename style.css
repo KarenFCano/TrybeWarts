@@ -21,21 +21,21 @@ header form {
 }
 
 /* Requisito 3 */
-.trybewarts-login .form-control{
+.trybewarts-login .form-control {
   border-radius: 10px;
   border: 2px solid rgb(50, 167, 145);
   margin: 3px;
   padding: 10px;
 }
 
-#btn{
+#btn {
   border-radius: 10px;
   border: 2px solid rgb(50, 167, 145);
-  background-color: rgb(75,0,130);
+  background-color: rgb(75, 0, 130);
   color: white;
   margin: 3px;
   padding: 10px;
-  width: 100px
+  width: 100px;
 }
 
 /* Main - Requisito 5 */
@@ -45,6 +45,7 @@ main {
   justify-content: space-around;
   margin: 70px;
 }
+
 /* Form - Requisito 6 */
 #evaluation-form {
   display: flex;
@@ -58,7 +59,7 @@ main {
   border: 2px solid rgb(50, 167, 145);
   margin: 3px;
   padding: 10px;
- }
+}
 
 /* Radio Buttons - Requisito 12 */
 #divFamily {
@@ -96,7 +97,7 @@ main {
   height: 500px;
 }
 
-#house{
+#house {
   border-radius: 10px;
   border: 2px solid rgb(50, 167, 145);
   background-color: white;
@@ -105,7 +106,7 @@ main {
 }
 
 /* Requisito 13 */
-#checkbox{
+#checkbox {
   display: flex;
   flex-direction: column;
   margin: 5px;
@@ -115,13 +116,13 @@ main {
   margin: 10px;
 }
 
-hr{
+hr {
   width: 650px;
-  border: 1px solid black; 
+  border: 1px solid black;
 }
 
 /* Ajuste logo do header */
-.trybewarts-header-logo{
+.trybewarts-header-logo {
   height: 60px;
 }
 
@@ -131,20 +132,20 @@ hr{
   margin: 5px;
 }
 
-/* Botão enviar - Requisito 17*/
-#submit-btn{
+/* Botão enviar - Requisito 17 */
+#submit-btn {
   margin-top: 100px;
   border-radius: 10px;
   border: none;
-  background-color: rgb(75,0,130);
+  background-color: rgb(75, 0, 130);
   color: white;
   margin: 3px;
   padding: 10px;
-  width: 660px
+  width: 660px;
 }
 
 /* Footer - Requisito 19 */
-#footer{
+#footer {
   background-color: rgb(41, 46, 45);
   color: white;
   display: flex;
