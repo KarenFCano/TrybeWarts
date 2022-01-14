@@ -6,6 +6,12 @@ button {
   cursor: pointer;
 }
 
+textarea {
+  height: 110px;
+  width: 660px;
+  resize: none;
+  font-family: Monserrat, sans-serif;
+}
 /* Header - Requisito 1 */
 header {
   background-color: rgb(50, 167, 145);

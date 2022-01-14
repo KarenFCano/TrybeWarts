@@ -36,7 +36,7 @@ function createRadioBtn() {
 
 createRadioBtn();
 
-/* CRIAR CONTADOR DE CARACTERES - REQUISITO 15 */
+// CRIAR CONTADOR DE CARACTERES - REQUISITO 15
 const contador = document.getElementById('textarea');
 
 contador.addEventListener('keypress', (event) => {
@@ -54,6 +54,7 @@ const remainingCharacters = document.getElementById('counter');
 contador.oninput = function remaining() {
   remainingCharacters.innerHTML = (500 - this.value.length);
 };
+
 // HABILITAR BOTÃO ENVIAR - REQUISITO 18
 const submitBtn = document.getElementById('submit-btn');
 const agreement = document.getElementById('agreement');
@@ -74,4 +75,32 @@ agreement.addEventListener('click', () => {
     submitBtn.style.backgroundColor = 'grey';
     submitBtn.style.cursor = 'default';
   }
+});
+
+// SAVE INFOS
+
+const infosText = () => {
+  const firstName = document.getElementById('input-name').value;
+  const lastName = document.getElementById('input-lastname').value;
+  const allContent = document.querySelectorAll('input[name=content]:checked');
+  const content = [];
+  for (let key = 0; key < allContent.length; key += 1) {
+    content.push(` ${allContent[key].value}`);
+  }
+  const infos = document.createElement('p');
+  infos.innerText = (`Suas Informações:
+
+Nome: ${firstName} ${lastName}
+Email: ${document.getElementById('input-email').value}
+Casa: ${document.getElementById('house').value}
+Família: ${document.querySelector('input[name=family]:checked').value}
+Matérias:${content}
+Avaliação: ${document.querySelector('input[name=rate]:checked').value}
+Observações: ${document.getElementById('textarea').value}`);
+  document.getElementById('evaluation-form').appendChild(infos);
+};
+
+submitBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  infosText();
 });
